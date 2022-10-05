@@ -7,6 +7,7 @@ const app = express()
 
 // CONFIG/MIDDLEWARE
 require('dotenv').config()
+const MONGO_URI = process.env.MONGO_URI
 const PORT = process.env.PORT
 app.use(express.json())
 app.use(cors())
